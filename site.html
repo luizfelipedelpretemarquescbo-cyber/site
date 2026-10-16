@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1> VENDA DE CAMISAS-CORSARIOS BAJA </h1>
+
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post"> 
+
+        <h2>Modelo 1:</h2>
+
+        <img src="./WhatsApp Image 2026-05-15 at 17.40.18 (1).jpeg"
+             alt="Camisa modelo 1"
+             width="250">
+
+        <br></br>
+        
+        <label for="tamanho1">Escolha o tamanho:</label>
+
+        <select id="tamanho1" name="tamanho_modelo1">
+            <option value="">Selecione</option>
+            <option value="PP">PP</option>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+            <option value="XGG">XGG</option>
+        </select>
+        <br></br>
+        <label for="quantidade1">Quantidade:</label>
+        
+        <input
+            type="number"
+            id="quantidade1"
+            name="quantidade1"
+            min="1"
+            max="100"
+            value="1"
+        > 
+
+        <p></p>
+
+        <h2>Modelo 2:</h2>
+    
+        <img src="./WhatsApp Image 2026-05-15 at 17.40.18.jpeg"
+             alt="Camisa modelo 1"
+             width="250">
+
+        <br></br>
+
+       <label for="tamanho2">Escolha o tamanho:</label>
+        
+        <select id="tamanho2" name="tamanho_modelo2">
+            <option value="">Selecione</option>
+            <option value="PP">PP</option>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+            <option value="XGG">XGG</option>
+        </select>
+
+        <br></br>
+
+        <label for="quantidade1">Quantidade:</label>
+        
+        <input
+            type="number"
+            id="quantidade1"
+            name="quantidade1"
+            min="1"
+            max="100"
+            value="1"
+        > 
+        <br></br>
+
+        <button type="submit">Enviar pedido</button>
+
+    </form>
+
+</body>
+</html>

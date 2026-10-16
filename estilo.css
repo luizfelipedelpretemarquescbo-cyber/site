@@ -1,0 +1,201 @@
+
+/* ==============================
+   CORSÁRIOS BAJA - VENDA DE CAMISAS
+   Paleta: Preto, Roxo e Dourado
+   ============================== */
+
+:root {
+    --preto: #100D14;
+    --preto-card: #1B1622;
+    --roxo: #542583;
+    --roxo-claro: #7844A5;
+    --dourado: #D8B45A;
+    --dourado-claro: #F0D58A;
+    --branco: #F7F3FA;
+    --cinza: #BDB4C7;
+}
+
+/* Configurações gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background:
+        radial-gradient(
+            circle at top,
+            #30203F 0%,
+            var(--preto) 55%
+        );
+    color: var(--branco);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* Título principal */
+
+h1 {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--dourado);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: 2px;
+    line-height: 1.3;
+    border-bottom: 2px solid var(--roxo-claro);
+    text-shadow: 0 0 18px rgba(120, 68, 165, 0.3);
+}
+
+/* Área do formulário */
+
+form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(27, 22, 34, 0.95);
+    border: 1px solid rgba(216, 180, 90, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Cada modelo */
+
+h2 {
+    margin: 10px 0 20px;
+    color: var(--dourado);
+    font-size: 1.5rem;
+}
+
+/* Imagens das camisas */
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 300px;
+    object-fit: contain;
+    margin: 0 auto 25px;
+    padding: 12px;
+    background: #FFFFFF;
+    border: 2px solid var(--roxo);
+    border-radius: 12px;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+img:hover {
+    transform: scale(1.03);
+    border-color: var(--dourado);
+}
+
+/* Textos dos campos */
+
+label {
+    display: inline-block;
+    margin: 8px 0;
+    color: var(--cinza);
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* Caixas de seleção e quantidade */
+
+select,
+input[type="number"] {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    min-height: 44px;
+    margin: 5px 0 20px;
+    padding: 10px 12px;
+    color: var(--branco);
+    background-color: var(--preto);
+    border: 1px solid var(--roxo-claro);
+    border-radius: 8px;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Destaque ao selecionar um campo */
+
+select:focus,
+input[type="number"]:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(216, 180, 90, 0.15);
+}
+
+/* Opções da lista */
+
+select option {
+    color: var(--branco);
+    background-color: var(--preto-card);
+}
+
+/* Separação entre os modelos */
+
+hr {
+    margin: 35px 0;
+    border: none;
+    border-top: 1px solid rgba(216, 180, 90, 0.35);
+}
+
+/* Botão de envio */
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 20px;
+    color: var(--preto);
+    background: linear-gradient(
+        135deg,
+        var(--dourado-claro),
+        var(--dourado)
+    );
+    border: none;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(216, 180, 90, 0.25);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Adaptação para celulares */
+
+@media (max-width: 600px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    form {
+        padding: 20px 16px;
+    }
+
+    img {
+        height: 250px;
+    }
+
+    select,
+    input[type="number"] {
+        max-width: 100%;
+    }
+}
