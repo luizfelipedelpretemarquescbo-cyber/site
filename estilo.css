@@ -1,8 +1,4 @@
 
-/* ==============================
-   CORSÁRIOS BAJA - VENDA DE CAMISAS
-   Paleta: Preto, Roxo e Dourado
-   ============================== */
 
 :root {
     --preto: #100D14;
@@ -15,7 +11,7 @@
     --cinza: #BDB4C7;
 }
 
-/* Configurações gerais */
+
 
 * {
     box-sizing: border-box;
@@ -35,7 +31,7 @@ body {
     min-height: 100vh;
 }
 
-/* Título principal */
+
 
 h1 {
     max-width: 900px;
@@ -49,7 +45,7 @@ h1 {
    text-shadow: 0 0 18px rgba(120, 68, 165, 0.3);
 }
 
-/* Área do formulário */
+
 
 form {
     max-width: 900px;
@@ -61,7 +57,7 @@ form {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
-/* Cada modelo */
+
 
 h2 {
     margin: 10px 0 20px;
@@ -69,7 +65,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-/* Imagens das camisas */
 
 img {
     display: block;
@@ -90,7 +85,7 @@ img:hover {
     border-color: var(--dourado);
 }
 
-/* Textos dos campos */
+
 
 label {
     display: inline-block;
@@ -100,7 +95,7 @@ label {
     font-weight: bold;
 }
 
-/* Caixas de seleção e quantidade */
+
 
 select,
 input[type="number"] {
@@ -119,7 +114,7 @@ input[type="number"] {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Destaque ao selecionar um campo */
+
 
 select:focus,
 input[type="number"]:focus {
@@ -127,14 +122,14 @@ input[type="number"]:focus {
     box-shadow: 0 0 0 3px rgba(216, 180, 90, 0.15);
 }
 
-/* Opções da lista */
+
 
 select option {
     color: var(--branco);
     background-color: var(--preto-card);
 }
 
-/* Separação entre os modelos */
+
 
 hr {
     margin: 35px 0;
@@ -142,7 +137,6 @@ hr {
     border-top: 1px solid rgba(216, 180, 90, 0.35);
 }
 
-/* Botão de envio */
 
 button[type="submit"] {
     display: block;
